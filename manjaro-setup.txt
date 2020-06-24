@@ -11,5 +11,8 @@
 *. configure zsh
    *. setup symlinks from README.md
    *. install bat package 
-*. setup default apps in ~/.config/mimeapps.list
+*. install node(use nvm directly), mongo, apache, php
+   *. https://www.tecmint.com/install-lamp-in-arch-linux/#:~:text=Step%201%3A%20Install%20Basic%20Software%20LAMP&text=After%20minimal%20system%20installation%20with,Linux%20box%20using%20pacman%20utility.&text=2.,verify%20every%20server%20process%20daemon.
+
+*. setup default apps in ~/.config/mimeapps.list (the desktop files are in /usr/share/applications)
 
