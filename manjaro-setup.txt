@@ -1,0 +1,15 @@
+*. NOTE: Always try and use default installers (google-chrome cant be done)
+
+*. install a browser
+*. configure .i3/config
+*. install fira code font
+*. install termite for fonts support
+*. setup i3 status bar config - https://medium.com/hacker-toolbelt/my-i3status-customization-3e8ad6f0153a 
+*. setup termite config - font, transperancy(compton must run for true tranparency), colors(https://terminal.sexy)
+*. install zsh and zsh-completions
+*. install vscode, vlc - configure vscode
+*. configure zsh
+   *. setup symlinks from README.md
+   *. install bat package 
+*. setup default apps in ~/.config/mimeapps.list
+
