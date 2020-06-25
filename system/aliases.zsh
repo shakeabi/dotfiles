@@ -2,8 +2,6 @@
 
 # General
 
-# alias fzf="fzf --preview-window=wrap --preview 'bat --style=numbers --theme='OneHalfDark' --color=always {}' --height=75%"
-
 alias cpeditor="cpeditor >/dev/null 2>&1 &"
 
 # Git

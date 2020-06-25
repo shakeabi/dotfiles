@@ -46,12 +46,12 @@ disk "/home" {
 
 ethernet _first_ {
 # if you use %speed, i3status requires root privileges
-        format_up = " lan: %ip %speed "
+        format_up = " Lan: %ip %speed "
         format_down = ""
 }
 
 wireless _first_ {
-	format_up = " wifi: %quality | %ip "
+	format_up = " WiFi: %quality | %ip "
 	format_down = " no wifi "
 }
 
