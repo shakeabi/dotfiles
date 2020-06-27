@@ -1,0 +1,2 @@
+0 15 * * * git_auto_commit.sh -u <username> -p <password> --repo_name cp --repo_path "/home/shake/delta/cp" >> /tmp/git_auto_commit-cp.log 2>&1
+0 15 * * * git_auto_commit.sh -u <username> -p <password> --repo_name dotfiles --repo_path "/home/shake/.dotfiles" >> /tmp/git_auto_commit-cp.log 2>&1
