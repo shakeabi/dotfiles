@@ -75,7 +75,7 @@ battery all {
 }
 
 memory {
-        format = " RAM: %free free "
+        format = " RAM: %available avail"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
