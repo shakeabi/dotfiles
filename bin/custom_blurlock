@@ -1,0 +1,53 @@
+#!/bin/bash
+# /usr/bin/blurlock
+
+# Initialise variables
+insidecolor=00000000
+keyhlcolor=4ef542ff
+bshlcolor=ffb300ff
+separatorcolor=00000000
+insidevercolor=00000000
+insidewrongcolor=d23c3dff
+ringcolor=2da800ff
+ringvercolor=2da800ff
+ringwrongcolor=ffb300ff
+verifcolor=ffffffff
+timecolor=ffffffff
+datecolor=ffffffff
+loginbox=00000066
+wrongcolor=ffffffff
+font="Fira Code"
+locktext='Type password to unlock...'
+background_img_path=~/.dotfiles/background/wp_bg.jpg
+
+# refer man-pages for customising
+
+# -i "$background_img_path" \ # use this for using backgroun img as lock screen 
+# --blue=8 \ # use this for live screen capture and blur
+
+lock() {
+
+	i3lock \
+		-i "$background_img_path" \
+		--timepos='x+220:h-140' \
+		--datepos='x+105:h-100' \
+		--clock --date-align 1 --datestr "%A, %m %Y" \
+		--datesize=20 --timesize=48 \
+		--insidecolor=$insidecolor --ringcolor=$ringcolor --line-uses-inside \
+		--keyhlcolor=$keyhlcolor --bshlcolor=$bshlcolor --separatorcolor=$separatorcolor \
+		--insidevercolor=$insidevercolor --insidewrongcolor=$insidewrongcolor \
+		--ringvercolor=$ringvercolor --ringwrongcolor=$ringwrongcolor --ringcolor=$ringcolor --indpos='x+420:h-140' \
+		--radius=35 --ring-width=3 --veriftext='' --wrongtext='' \
+		--verifcolor="$verifcolor" --timecolor="$timecolor" --datecolor="$datecolor" \
+		--time-font="$font" --date-font="$font" --layout-font="$font" --verif-font="$font" --wrong-font="$font" \
+		--noinputtext='' --force-clock --pass-media-keys $lockargs
+
+}
+
+# lock the screen
+lock
+
+# sleep 1 adds a small delay to prevent possible race conditions with suspend
+sleep 1
+
+exit 0
