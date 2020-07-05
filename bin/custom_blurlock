@@ -7,7 +7,7 @@ keyhlcolor=4ef542ff
 bshlcolor=ffb300ff
 separatorcolor=00000000
 insidevercolor=00000000
-insidewrongcolor=d23c3dff
+insidewrongcolor=80000000
 ringcolor=2da800ff
 ringvercolor=2da800ff
 ringwrongcolor=ffb300ff
@@ -19,6 +19,8 @@ wrongcolor=ffffffff
 font="Fira Code"
 locktext='Type password to unlock...'
 background_img_path=~/.dotfiles/background/wp_bg.jpg
+
+# default red color-code = d23c3dff
 
 # refer man-pages for customising
 
