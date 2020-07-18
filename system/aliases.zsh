@@ -3,6 +3,7 @@
 # General
 
 alias cpeditor="cpeditor >/dev/null 2>&1 &"
+alias drv="cd /run/media/shake/Shake"
 
 # Git
 alias g="git"
