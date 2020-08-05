@@ -59,7 +59,7 @@ bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec brave
 bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec terminal -e 'ranger'
-bindsym $mod+Shift+F3 exec pcmanfm_pkexec
+# bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
@@ -424,3 +424,9 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
+bindsym $mod+Shift+F1 exec --no-startup-id amixer -D pulse sset Master toggle # mute sound
+# bindsym $mod+Shift+F2 exec --no-startup-id amixer -D pulse sset Master 5%-; notify-send $(awk '/%/ {gsub(/[\[\]]/,""); print "volume:"$5}' <(amixer sget Master))
+bindsym $mod+Shift+F2 exec --no-startup-id ~/.dotfiles/bin/volDec.sh
+bindsym $mod+Shift+F3 exec --no-startup-id ~/.dotfiles/bin/volInc.sh
+
